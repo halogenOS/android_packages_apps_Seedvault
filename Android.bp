@@ -57,6 +57,7 @@ android_app {
     use_embedded_native_libs: true,
     manifest: "app/src/main/AndroidManifest.xml",
 
+    system_ext_specific: true,
     platform_apis: true,
     certificate: "platform",
     privileged: true,
@@ -76,6 +77,7 @@ prebuilt_etc {
     sub_dir: "sysconfig",
     src: "allowlist_com.stevesoltys.seedvault.xml",
     filename_from_src: true,
+    system_ext_specific: true,
 }
 
 prebuilt_etc {
@@ -83,6 +85,7 @@ prebuilt_etc {
     sub_dir: "default-permissions",
     src: "default-permissions_com.stevesoltys.seedvault.xml",
     filename_from_src: true,
+    system_ext_specific: true,
 }
 
 prebuilt_etc {
@@ -90,4 +93,5 @@ prebuilt_etc {
     sub_dir: "permissions",
     src: "permissions/com.stevesoltys.seedvault.xml",
     filename_from_src: true,
+    system_ext_specific: true,
 }
