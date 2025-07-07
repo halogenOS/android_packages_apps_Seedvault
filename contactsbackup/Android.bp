@@ -19,6 +19,7 @@ android_app {
         "default-permissions_app.grapheneos.backup.contacts",
     ],
     sdk_version: "current",
+    system_ext_specific: true,
 }
 
 prebuilt_etc {
@@ -26,4 +27,5 @@ prebuilt_etc {
     sub_dir: "default-permissions",
     src: "default-permissions_app.grapheneos.backup.contacts.xml",
     filename_from_src: true,
+    system_ext_specific: true,
 }
